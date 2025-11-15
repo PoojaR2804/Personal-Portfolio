@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+    background: #0d0f16;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header {
+    width: 100%;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 10, 15, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color:blueviolet;
+    text-shadow: 0 0 10px blueviolet;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin-right: 65px;
+    
+}
+
+nav ul li a {
+    font-size: 18px;
+    transition: 0.3s;
+    color:blueviolet;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-shadow: 0 0 8px blueviolet;
+    cursor: pointer;
+}
+.ab1{
+    margin-left: 60px;
+}
+
+#home {
+    padding-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    min-height: 100vh;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    color: blueviolet;
+    text-shadow: 0 0 12px blueviolet;
+}
+
+.hero-text h3 {
+    font-size: 22px;
+    margin-top: -10px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.btn-glow {
+    background:blueviolet;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 15px blueviolet;
+    color: #0d0f16;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 25px blueviolet;
+}
+
+
+.hexagon {
+    width: 260px;
+    height: 280px;
+    position: relative;
+    background: linear-gradient(145deg, blueviolet, blueviolet);
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    padding: 10px;
+    box-shadow: 10 10 50px blueviolet;
+}
+
+.hexagon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inherit;
+}
+
+
+section {
+    padding: 80px 60px;
+}
+
+
+.skills-box {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+    width: 120px;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    box-shadow: 0 0 10px blueviolet;
+}
+
+.skill img {
+    width: 60px;
+}
+
+
+.project {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid blueviolet;
+    border-radius: 10px;
+    box-shadow: 0 0 10px blueviolet;
+}
+
+
+#recommendations-list p {
+    background: rgba(255,255,255,0.07);
+    padding: 12px;
+    margin: 12px 0;
+    border-left: 4px solid blueviolet;
+    border-radius: 8px;
+    box-shadow: 0 0 10px blueviolet;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid blueviolet;
+    background: #0d0f16;
+    color: white;
+    box-shadow: 0 0 10px blueviolet;
+}
+
+button {
+    padding: 10px 20px;
+    background:blueviolet;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px blueviolet;
+}
+
+button:hover {
+    box-shadow: 0 0 15px c
+}
+
+
+#home-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 35px;
+    color: blueviolet;
+    text-shadow: 0 0 12px blueviolet;
+}
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px p;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-out;
+    color:black;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
