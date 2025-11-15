@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>Pooja Portfolio</title>
+<script src="new portfolio.js"></script>
+
+
+
+<link rel="stylesheet" href="new portfolio.css">
+<body>
+
+<header>
+    <div class="logo">Pooja</div>
+    
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="hero-text">
+     <h2>Hello, It's Me</h2>
+        <h1>Pooja Ramadhas</h1>
+        <h3>And I'm a Frontend Developer</h3>
+        <p>I create modern, responsive and attractive websites using HTML, CSS, and JavaScript. I also work on Arduino + IoT projects.</p>
+
+        <a href="#about" class="btn-glow">Explore More</a>
+    </div>
+
+    <div class="hexagon">
+        <img src="mypic.png.jpeg" alt="Profile">
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p class="ab1"style="font-size: 20px;">I am a passionate developer who loves designing UI components and working with IoT systems. <br><br>I specialize in frontend web development and embedded systems.<br><br>
+    I enjoy coding, designing, and exploring new tech.</p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-box">
+        <div class="skill">
+            <img src="html logo.png">
+            <p>HTML</p>
+        </div>
+        <div class="skill">
+            <img src="css logo.png">
+            <p>CSS</p>
+        </div>
+        <div class="skill">
+            <img src="js logo.png">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="jquery logo.png">
+            <p>jQuery</p>
+        </div>
+        <div class="skill">
+            <img src="react_logo.pmg.png">
+            <p>React.js</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+        <h3>1. Smart Medicine Reminder using Arduino</h3>
+        <p>IoT-based fully automated medicine reminder with buzzer, LED, push button and Blynk alert system.</p>
+    </div>
+
+    <div class="project">
+        <h3>2. Portfolio Website</h3>
+        <p>A premium glowing portfolio UI inspired by modern futuristic design.</p>
+    </div>
+
+    <div class="project">
+        <h3>3. Food Recipe Website</h3>
+        <p> It showcases different recipes with images, ingredient lists, and preparation steps. The design focuses on clean layout, smooth navigation, and attractive food presentation.</p>
+    </div>
+</section>
+
+
+<section id="recommendations">
+    <h2>Recommendations</h2>
+
+    <div id="recommendations-list">
+        <p>"Very creative with UI design!" - Sneha</p>
+        <p>"Excellent problem-solving skills."- Rahul</p>
+        <p>"Always delivers clean and perfect code." -Kavya</p>
+    </div>
+
+    <input id="rec-input" placeholder="Write a recommendation...">
+    <button onclick="addRec()">Submit</button>
+</section>
+
+<a href="#home" id="home-btn"><i class="fa fa-home"></i></a>
+
+</body>
+</html>
