@@ -14,8 +14,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
-
 header {
     width: 100%;
     padding: 20px 60px;
@@ -54,10 +52,6 @@ nav ul li a:hover {
     color: white;
     text-shadow: 0 0 8px blueviolet;
     cursor: pointer;
-    flex-direction: column;
-    gap: 15px;
-    margin-right: 0;
-    padding-left: 0;
 }
 .ab1{
     margin-left: 60px;
@@ -70,10 +64,6 @@ nav ul li a:hover {
     justify-content: center;
     gap: 80px;
     min-height: 100vh;
-    flex-direction: column;
-    gap: 40px;
-    padding: 100px 20px 20px;
-    text-align: center;
 }
 
 .hero-text {
@@ -234,6 +224,21 @@ button:hover {
     align-items: flex-start;
     padding: 15px 30px;
   }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  #home {
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 20px 20px;
+    text-align: center;
+  }
+
   .hero-text {
     max-width: 100%;
     padding: 0 20px;
@@ -291,3 +296,5 @@ button:hover {
     bottom: 15px;
   }
 }
+    
+ 
