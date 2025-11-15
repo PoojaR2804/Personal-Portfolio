@@ -220,34 +220,81 @@ button:hover {
     from { opacity: 0; transform: translateY(-10px); }
     to   { opacity: 1; transform: translateY(0); }
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-
 @media (max-width: 768px) {
-  .container {
+  header {
     flex-direction: column;
-    padding: 10px;
+    align-items: flex-start;
+    padding: 15px 30px;
   }
 
-  .nav {
+  nav ul {
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
+    margin-right: 0;
+    padding-left: 0;
   }
 
-  .image {
+  #home {
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 20px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .hero-text h3 {
+    font-size: 18px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .hexagon {
+    width: 200px;
+    height: 220px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .skills-box {
+    justify-content: center;
+  }
+
+  .skill {
+    width: 100px;
+    padding: 15px;
+  }
+
+  input {
     width: 100%;
   }
 
-  .text-box {
+  .ab1 {
+    margin-left: 0;
+    padding: 0 20px;
+    font-size: 16px !important;
     text-align: center;
-    padding: 10px;
+  }
+
+  #home-btn {
+    font-size: 28px;
+    right: 15px;
+    bottom: 15px;
   }
 }
