@@ -1,132 +1,480 @@
-t<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-<title>Pooja Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>   
-<script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b14">
+  <meta name="description" content="Pooja R. — Full Stack Developer Portfolio">
+  <title>Pooja R. | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
 <body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
 
-<header>
-    <div class="logo">Pooja</div>
-    
+  <header class="header">
+    <a href="#home" class="logo"><b>P</b> Pooja R</a>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#recommendations">Recommendations</a></li>
-        </ul>
+    <button class="menu" aria-label="Open navigation menu"
+      aria-expanded="false" aria-controls="navigation">☰</button>
+
+    <nav id="navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#certifications">Certifications</a>
+      <a class="talk" href="#contact">Let's talk ↗</a>
     </nav>
-</header>
+  </header>
 
-<section id="home">
-    <div class="hero-text">
-     <h2>Hello, It's Me</h2>
-        <h1>Pooja Ramadhas</h1>
-        <h3>And I'm a Fullstack Developer</h3>
-        <p>I create modern, responsive and attractive websites using HTML, CSS, JavaScript ,Reactjs,Nodejs and MongoDB. I also work on Arduino + IoT projects.</p>
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap" id="home">
+      <div class="hero-text reveal">
+        <div class="eyebrow"><i></i> COMPUTER SCIENCE & ENGINEERING</div>
 
-        <a href="#about" class="btn-glow">Explore More</a>
-    </div>
+        <h1>Hi, I'm <em>Pooja R</em><br>
+          Full Stack<br><span>Developer.</span>
+        </h1>
 
-    <div class="hexagon">
-        <img src="mypic.png.jpeg" alt="Profile">
-    </div>
-</section>
+        <p class="lead">
+          A curious developer turning ideas into responsive, useful,
+          and thoughtful web experiences.
+        </p>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p class="ab1"style="font-size: 20px;">I am a passionate developer who loves designing UI components and working with IoT systems. <br><br>I specialize in frontend web development and embedded systems.<br><br>
-    I enjoy coding, designing, and exploring new tech.</p>
-</section>
-
-<section id="skills">
-    <h2>My Skills</h2>
-
-    <div class="skills-box">
-        <div class="skill">
-            <img src="html logo.png">
-            <p>HTML</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my work ↗</a>
+          <a class="btn secondary" href="assets/Pooja_R_Resume.pdf"
+            target="_blank" rel="noopener">View resume ↓</a>
         </div>
-        <div class="skill">
-            <img src="css logo.png">
-            <p>CSS</p>
+
+        <div class="social">
+          <a href="https://github.com/PoojaR2804"
+            target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="mailto:poojaramadhas546@gmail.com">Email me ↗</a>
+          <span>⌖ Nagercoil, Tamil Nadu</span>
         </div>
-        <div class="skill">
-            <img src="bootstrap-logo.png">
-            <p>Bootstrap</p>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="portrait">
+          <img src="assets/pooja.jpg" alt="Pooja R, Full Stack Developer"
+            width="400" height="500">
         </div>
-        <div class="skill">
-            <img src="js logo.png">
-            <p>JavaScript</p>
+
+        <div class="float float-one">
+          <b>⌘</b>
+          <div><strong>Clean code</strong><small>Built with intention</small></div>
         </div>
-        <div class="skill">
-            <img src="jquery logo.png">
-            <p>jQuery</p>
+
+        <div class="float float-two">
+          <b>✦</b>
+          <div><strong>Full-stack learner</strong><small>Always exploring</small></div>
         </div>
-        <div class="skill">
-            <img src="https://images.seeklogo.com/logo-png/27/1/node-js-logo-png_seeklogo-273749.png">
-            <p>Node js</p>
+      </div>
+
+      <a class="scroll" href="#about">— SCROLL TO EXPLORE</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="wrap section" id="about">
+      <div class="heading reveal">
+        <label>01 / ABOUT ME</label>
+        <h2>Developer by practice.<br>
+          <span>Problem-solver by nature.</span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="big">
+            I'm a Computer Science and Engineering student at
+            <strong>Arunachala College of Engineering for Women</strong>,
+            interested in building practical web applications with
+            thoughtful user experiences.
+          </p>
+
+          <p>
+            My work spans frontend interfaces, full-stack applications,
+            REST API integration, database management, and UI/UX design.
+          </p>
+
+          <p>
+            I'm seeking a Software Developer role where I can contribute
+            my technical skills while learning and growing in a dynamic team.
+          </p>
+
+          <a class="inline-link" href="#contact">Let's build something useful ↗</a>
         </div>
-        <div class="skill">
-            <img src="react_logo.pmg.png">
-            <p>React.js</p>
+
+        <div class="stats reveal">
+          <div><strong>08</strong><small>Projects in my portfolio</small></div>
+          <div><strong>03</strong><small>Internship experiences</small></div>
+          <div class="wide"><strong>8.2<small>/10</small></strong>
+            <small>Current CGPA · B.E. CSE</small></div>
         </div>
-        <div class="skill">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.x3hgOlg0CVO2PM-euQlB3QHaHa?pid=Api&P=0&h=180">
-            <p>MongoDB</p>
-        </div> 
-        
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!-- SKILLS -->
+    <section class="wrap section" id="skills">
+      <div class="heading reveal">
+        <label>02 / TOOLKIT</label>
+        <h2>Tools I use to<br><span>bring ideas to life.</span></h2>
+      </div>
 
-<section id="projects">
-    <h2>My Projects</h2>
+      <div class="skills-grid">
+        <div class="skill-intro reveal">
+          <p>
+            My toolkit keeps growing with every project. These are the
+            technologies and tools I've worked with through learning
+            and hands-on development.
+          </p>
+          <p class="note">✳ Learning is part of the workflow.</p>
+        </div>
 
-    <div class="project">
-        <h3>1. Smart Medicine Reminder using Arduino</h3>
-        <p>IoT-based fully automated medicine reminder with buzzer, LED, push button and Blynk alert system.</p>
-    </div>
+        <div class="skill-list reveal">
+          <div>
+            <label>01</label><b>Languages</b>
+            <p><span>Python</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></p>
+          </div>
+          <div>
+            <label>02</label><b>Frontend</b>
+            <p><span>React.js</span><span>Vite</span><span>Bootstrap</span><span>Responsive UI</span></p>
+          </div>
+          <div>
+            <label>03</label><b>Backend & APIs</b>
+            <p><span>Django</span><span>Django REST Framework</span><span>Flask</span><span>Node.js</span><span>Express.js</span><span>REST APIs</span></p>
+          </div>
+          <div>
+            <label>04</label><b>Databases</b>
+            <p><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>SQLite</span></p>
+          </div>
+          <div>
+            <label>05</label><b>Tools & Design</b>
+            <p><span>Git</span><span>GitHub</span><span>VS Code</span><span>Vercel</span><span>Render</span><span>Figma</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="project">
-        <h3>2. Portfolio Website</h3>
-        <p>A premium glowing portfolio UI inspired by modern futuristic design.Deployed using Netlify.</p>
-    </div>
+    <!-- PROJECTS -->
+    <section class="wrap section" id="projects">
+      <div class="heading reveal">
+        <label>03 / SELECTED WORK</label>
+        <h2>Projects with<br><span>purpose and personality.</span></h2>
+        <p>A collection of applications, interfaces, and design explorations.</p>
+      </div>
 
-    <div class="project">
-        <h3>3. Food Recipe Website</h3>
-        <p>Created responsive recipe web pages using HTML, CSS (Bootstrap).It showcases different recipes with images, ingredient lists, and preparation steps. </p>
-    </div>
-    <div class="project">
-        <h3>4. Student Management System(MERN Stack) </h3>
-        <p>Developed a mini project to manage student records.Implemented full CRUD operations.Tech Stack: React.js, Node.js, Express.js, MongoDB.</p>
-    </div>
-</section>
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project-number">01 / FULL STACK</div>
+          <h3>BookNova – Online Book Store</h3>
+          <p>
+            A full-stack bookstore with book browsing, category filtering,
+            PDF reading and downloads, and Razorpay payment integration.
+          </p>
+          <div class="tags"><span>React.js</span><span>Django</span><span>REST API</span><span>Razorpay</span></div>
+          <a class="project-link" href="https://booknova-tzld.vercel.app/"
+            target="_blank" rel="noopener noreferrer">Project link ↗</a>
+        </article>
 
+        <article class="project reveal">
+          <div class="project-number">02 / FULL STACK</div>
+          <h3>GLOVIA – Skincare E-Commerce</h3>
+          <p>
+            A skincare shopping application with authentication, products,
+            cart management, wishlist, profiles, and orders.
+          </p>
+          <div class="tags"><span>React</span><span>Django</span><span>PostgreSQL</span></div>
+          <a class="project-link" href="https://glovia-kohl.vercel.app/"
+            target="_blank" rel="noopener noreferrer">Project link ↗</a>
+        </article>
 
-<section id="recommendations">
-    <h2>Recommendations</h2>
+        <article class="project reveal">
+          <div class="project-number">03 / FULL STACK</div>
+          <h3>CampusVibe – Event Management</h3>
+          <p>
+            A college event website with student login, event exploration,
+            and online event registration.
+          </p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span><span>MongoDB</span></div>
+          <a class="project-link" href="https://campus-vibe-9yv8.onrender.com/"
+            target="_blank" rel="noopener noreferrer">Project link ↗</a>
+        </article>
 
-    <div id="recommendations-list">
-        <p>"Very creative with UI design!" - Sneha</p>
-        <p>"Excellent problem-solving skills."- Rahul</p>
-        <p>"Always delivers clean and perfect code." -Kavya</p>
-    </div>
+        <article class="project reveal">
+          <div class="project-number">04 / FRONTEND</div>
+          <h3>StyleHub – Fashion E-Commerce</h3>
+          <p>
+            A responsive fashion website with product search, shopping cart,
+            checkout flow, and LocalStorage-based order management.
+          </p>
+          <div class="tags"><span>HTML</span><span>Bootstrap</span><span>JavaScript</span></div>
+          <a class="project-link" href="https://poojar2804.github.io/STYLEHUB/"
+            target="_blank" rel="noopener noreferrer">Project link ↗</a>
+        </article>
 
-    <input id="rec-input" placeholder="Write a recommendation...">
-    <button onclick="addRec()">Submit</button>
-</section>
+        <article class="project reveal">
+          <div class="project-number">05 / MERN STACK</div>
+          <h3>Student Management System</h3>
+          <p>
+            A student management application with CRUD functionality,
+            responsive interfaces, and MongoDB data management.
+          </p>
+          <div class="tags"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div>
+          <a class="project-link" href="https://lnkd.in/p/gAuTBPSy"
+            target="_blank" rel="noopener noreferrer">Project link ↗</a>
+        </article>
 
-<a href="#home" id="home-btn"><i class="fa fa-home"></i></a>
+        <article class="project reveal">
+          <div class="project-number">06 / FULL STACK</div>
+          <h3>Mini CRM – Lead Management</h3>
+          <p>
+            A CRM application for managing customer leads and interactions
+            with CRUD operations, search, and a dashboard.
+          </p>
+          <div class="tags"><span>MERN</span><span>CRUD</span><span>Dashboard</span></div>
+          <a class="project-link" href="https://lnkd.in/p/gxWuyEzN"
+            target="_blank" rel="noopener noreferrer">Project link ↗</a>
+        </article>
 
+        <article class="project reveal">
+          <div class="project-number">07 / WEB DESIGN</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A responsive portfolio presenting projects, skills, resume,
+            and contact information through a modern interface.
+          </p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a class="project-link" href="https://futurefs01-portfolio.netlify.app/"
+            target="_blank" rel="noopener noreferrer">Project link ↗</a>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-number">08 / UI/UX CASE STUDY</div>
+          <h3>MediAlert – Medicine Reminder</h3>
+          <p>
+            A medicine reminder app concept with user flows, wireframes,
+            and interactive prototypes focused on usability.
+          </p>
+          <div class="tags"><span>Figma</span><span>UI/UX</span><span>Prototyping</span></div>
+          <a class="project-link" href="https://lnkd.in/p/gvemuz_4"
+            target="_blank" rel="noopener noreferrer">Project link ↗</a>
+        </article>
+      </div>
+
+      <p class="footnote">
+        Project links open the associated project pages. Check that each link
+        is still active before publishing.
+      </p>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="wrap section" id="journey">
+      <div class="heading reveal">
+        <label>04 / MY JOURNEY</label>
+        <h2>Learning through<br><span>real-world experience.</span></h2>
+      </div>
+
+      <div class="journey-grid">
+        <div class="reveal">
+          <h3 class="col-title">✳ Experience & internships</h3>
+          <div class="timeline">
+            <article>
+              <div class="time-head"><h4>Future Interns</h4><span>Feb 2026 – Mar 2026</span></div>
+              <label>Full Stack Web Development Intern</label>
+              <p>Developed responsive full-stack applications using HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. Implemented CRUD operations and worked on development tasks.</p>
+            </article>
+            <article>
+              <div class="time-head"><h4>Pantech E-Learning</h4><span>Jun 2025 – Jul 2025</span></div>
+              <label>Python Full Stack Intern</label>
+              <p>Built responsive web pages and gained hands-on experience with Python, Django, database connectivity, and CRUD operations.</p>
+            </article>
+            <article>
+              <div class="time-head"><h4>AK Infopark</h4><span>Feb 2025</span></div>
+              <label>UI/UX Design Intern</label>
+              <p>Designed wireframes and interactive prototypes using Figma for mobile application interfaces.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 class="col-title">✳ Education</h3>
+          <div class="timeline">
+            <article>
+              <div class="time-head"><h4>Arunachala College of Engineering for Women</h4><span>2023 – 2027</span></div>
+              <label>B.E. Computer Science and Engineering</label>
+              <p>CGPA: <strong>8.2 / 10</strong></p>
+            </article>
+            <article>
+              <div class="time-head"><h4>Sri Vigneshwara Matriculation HSS</h4><span>2022 – 2023</span></div>
+              <label>Higher Secondary Education (HSC)</label>
+              <p>Percentage: <strong>82.5%</strong></p>
+            </article>
+            <article>
+              <div class="time-head"><h4>Sri Vigneshwara Matriculation HSS</h4><span>2020 – 2021</span></div>
+              <label>Secondary Education (SSLC)</label>
+              <p>Eligibility: <strong>Pass</strong></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="wrap section" id="certifications">
+      <div class="heading reveal">
+        <label>05 / CERTIFICATIONS</label>
+        <h2>Curiosity, made<br><span>official.</span></h2>
+        <p>Courses that support my learning in software development, cloud, and modern engineering practices.</p>
+      </div>
+
+      <div class="certs">
+        <a class="cert reveal" href="https://www.linkedin.com/in/pooja-r-96833130a"
+          target="_blank" rel="noopener noreferrer">
+          <b class="cert-icon">i.</b>
+          <div><label>AGILE METHODOLOGY</label>
+            <h3>Introduction to Agile Methodology</h3>
+            <p>Infosys Springboard</p></div><span>↗</span>
+        </a>
+
+        <a class="cert reveal" href="https://www.linkedin.com/in/pooja-r-96833130a"
+          target="_blank" rel="noopener noreferrer">
+          <b class="cert-icon">i.</b>
+          <div><label>DEVOPS · CI/CD</label>
+            <h3>Continuous Integration and Delivery – DevOps</h3>
+            <p>Infosys Springboard</p></div><span>↗</span>
+        </a>
+
+        <a class="cert reveal" href="https://lnkd.in/p/gNfAC46R"
+          target="_blank" rel="noopener noreferrer">
+          <b class="cert-icon">N</b>
+          <div><label>CLOUD TECHNOLOGY</label>
+            <h3>Cloud Computing</h3>
+            <p>NPTEL</p></div><span>↗</span>
+        </a>
+
+        <a class="cert reveal" href="https://lnkd.in/p/gy5p55mS"
+          target="_blank" rel="noopener noreferrer">
+          <b class="cert-icon">IT</b>
+          <div><label>FULL STACK DEVELOPMENT</label>
+            <h3>Python Full Stack Development</h3>
+            <p>IT Desk</p></div><span>↗</span>
+        </a>
+
+        <a class="cert reveal" href="https://lnkd.in/p/gch5znja"
+          target="_blank" rel="noopener noreferrer">
+          <b class="cert-icon">i.</b>
+          <div><label>BACKEND · DJANGO</label>
+            <h3>Basic Django</h3>
+            <p>Infosys Springboard</p></div><span>↗</span>
+        </a>
+
+        <a class="cert reveal" href="https://lnkd.in/p/gch5znja"
+          target="_blank" rel="noopener noreferrer">
+          <b class="cert-icon">i.</b>
+          <div><label>UI/UX DESIGN</label>
+            <h3>UI and UX Designing with Color Theory</h3>
+            <p>Infosys Springboard</p></div><span>↗</span>
+        </a>
+
+        <a class="cert reveal" href="https://lnkd.in/p/gyAUAtik"
+          target="_blank" rel="noopener noreferrer">
+          <b class="cert-icon">S+</b>
+          <div><label>FULL STACK DEVELOPMENT</label>
+            <h3>Modern Full Stack Development</h3>
+            <p>Skill Sync Pvt. Ltd.</p></div><span>↗</span>
+        </a>
+
+        <a class="cert reveal" href="https://lnkd.in/p/gTYs-eEU"
+          target="_blank" rel="noopener noreferrer">
+          <b class="cert-icon">IBM</b>
+          <div><label>FRONTEND DEVELOPMENT</label>
+            <h3>Frontend Technologies</h3>
+            <p>IBM</p></div><span>↗</span>
+        </a>
+      </div>
+
+      <p class="footnote">Select a certification to open its associated link.</p>
+    </section>
+
+    <!-- ACHIEVEMENTS AND PUBLICATION -->
+    <section class="wrap section" id="highlights">
+      <div class="heading reveal">
+        <label>06 / HIGHLIGHTS</label>
+        <h2>Milestones that<br><span>keep me moving.</span></h2>
+      </div>
+
+      <div class="highlights">
+        <article class="reveal">
+          <b>✦</b><label>RECOGNITION</label>
+          <h3>Letter of Recommendation</h3>
+          <p>Received from Future Interns for performance during the Full Stack Web Development Internship.</p>
+        </article>
+
+        <article class="reveal">
+          <b>↗</b><label>NATIONAL SYMPOSIUM</label>
+          <h3>SYNERVA'26 Prize Winner</h3>
+          <p>Won prizes at the national-level technical symposium, including Code Relay, Paper Presentation, and Web Development & Chatbot Creation.</p>
+        </article>
+
+        <article class="reveal">
+          <b>⌘</b><label>PUBLICATION</label>
+          <h3>Using AI to Recommend Books: A Review of Current Methods</h3>
+          <p>Review article published in IRJET, Volume 13, Issue 09, September 2026.</p>
+          <a class="inline-link" href="https://www.irjet.net/archives/V13/i9/IRJET-V13I0938.pdf"
+            target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="wrap contact-inner reveal">
+        <label>07 / CONTACT</label>
+        <h2>Have an idea?<br><em>Let's make it real.</em></h2>
+        <p>
+          I'm open to learning opportunities, internships, collaborations,
+          and conversations about web development.
+        </p>
+        <a class="btn primary" href="mailto:poojaramadhas546@gmail.com">Say hello ↗</a>
+
+        <div class="contact-details">
+          <a href="mailto:poojaramadhas546@gmail.com">
+            <b>✉</b><span><small>EMAIL</small>poojaramadhas546@gmail.com</span>
+          </a>
+          <a href="tel:+919042105693">
+            <b>✆</b><span><small>PHONE</small>+91 9042105693</span>
+          </a>
+          <a href="https://github.com/PoojaR2804" target="_blank" rel="noopener noreferrer">
+            <b>⌘</b><span><small>GITHUB</small>github.com/PoojaR2804</span>
+          </a>
+          <div><b>⌖</b><span><small>LOCATION</small>Nagercoil, Tamil Nadu</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <a class="logo" href="#home"><b>P</b> Pooja R</a>
+    <p>Designed & built with curiosity <em>✦</em></p>
+    <small>© <span id="year"></span> Pooja R.</small>
+  </footer>
+
+  <button class="top" aria-label="Back to top">↑</button>
 </body>
 </html>
